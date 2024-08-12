@@ -1,9 +1,7 @@
-import classNames from 'classnames';
+import Home from '@/pages/Home';
 
-import styles from './page.module.scss';
-
-const Home = () => {
-  return <main className={classNames('container', styles.main)}>page</main>;
+const HomePage = () => {
+  return <Home />;
 };
 
-export default Home;
+export default HomePage;

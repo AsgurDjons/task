@@ -1,0 +1,36 @@
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  .wrapperInput {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+
+    .error {
+      color: red;
+      font-size: 12px;
+      height: 15px;
+    }
+  }
+
+  .btnSubmit {
+    display: inline-block;
+    color: white;
+    background-color: #535c69;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+
+    &:disabled {
+      background-color: #919090;
+      cursor: inherit;
+    }
+  }
+}

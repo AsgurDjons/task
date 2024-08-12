@@ -3,6 +3,9 @@ import { Inter } from 'next/font/google';
 import './globals.scss';
 import type { ReactNode } from 'react';
 
+import HomeLayout from '@/layouts/HomeLayout';
+import { AuthProviders } from '@/providers/authProvider';
+
 const inter = Inter({
   weight: ['300', '500', '700', '900'],
   subsets: ['cyrillic'],
@@ -20,7 +23,11 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AuthProviders>
+          <HomeLayout>{children}</HomeLayout>
+        </AuthProviders>
+      </body>
     </html>
   );
 };

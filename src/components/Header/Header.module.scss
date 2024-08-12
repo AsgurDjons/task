@@ -1,0 +1,27 @@
+.header {
+  background-color: white;
+  padding: 10px 0;
+}
+
+.wrapperHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapperLogo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .logoImage {
+    max-width: 40px;
+    max-height: 40px;
+    height: auto;
+    object-fit: contain;
+  }
+  .logoText {
+    font-size: 38px;
+    margin: 0;
+    color: #6fb143;
+  }
+}

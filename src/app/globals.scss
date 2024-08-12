@@ -1,6 +1,27 @@
 @import '../styles/normalize';
 
+body {
+  background-color: #edf1f3;
+}
+
 .container {
   width: 1180px;
   margin: 0 auto;
+
+  @media (max-width: 1290px) {
+    width: 960px;
+  }
+
+  @media (max-width: 979px) {
+    width: 688px;
+  }
+
+  @media (max-width: 769px) {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.hidden {
+  display: none;
 }
